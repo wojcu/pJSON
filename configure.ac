@@ -1,0 +1,19 @@
+AC_INIT([pjson], [0.1])
+AM_INIT_AUTOMAKE([foreign subdir-objects])
+AC_CONFIG_MACRO_DIRS([m4])
+AC_USE_SYSTEM_EXTENSIONS
+AC_LANG(C++)
+
+AC_PROG_CXX
+
+AC_PROG_RANLIB
+
+AX_CXX_COMPILE_STDCXX_11
+
+AC_CONFIG_FILES([
+  Makefile
+  src/pjson.pc
+  src/Makefile
+])
+
+AC_OUTPUT
